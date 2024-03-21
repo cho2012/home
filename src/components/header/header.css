@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    box-shadow: 2px 2px 2px rgb(221, 221, 221);
+}
+
+.nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,12 +1,59 @@
 .header {
+    height: 70px;
+    padding-inline:  20px;
     display: flex;
     justify-content: space-between;
-    padding: 12px;
+    align-items: center;
     box-shadow: 2px 2px 2px rgb(192, 192, 192);
 }
 
-.nav {
-    width: 400px;
+
+.logo {
+    text-transform: uppercase;
+    
+}
+
+.big {
+    font-size: 30px;
+    font-weight: 650;
+}
+
+.nav  {
+    width: 500px;
     display: flex;
     justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 75;
 }
+
+.nav div{
+    padding: 10;
+}
+
+.nav div:hover {
+    background: #000;
+    color: #FFFFFF;
+    transition: background 0.5s;
+}
+
+.login {
+    border: solid 1px rgb(157, 157, 157);
+    padding: 11px 35px;
+    border-radius: 51px;
+    font-size: 19px;
+}
+
+.login:hover {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.login:hover {
+	-webkit-transform: rotate(15deg) scale(0.5);
+	transform: rotate(15deg) scale(0.5);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+

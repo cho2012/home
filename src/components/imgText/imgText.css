@@ -1,0 +1,68 @@
+.ImgText {
+    /* border: solid 9px aqua; */
+    height: 842px;
+    background-color: #f5f5f5;
+    
+}
+
+.ImgText-wrap {
+
+    max-width: 1161px;
+    margin-block: 100px;
+    padding-top: 134px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    /* border: solid 9px green; */
+
+
+}
+
+.Imgbox {
+border-radius: 10px;
+background-size: cover;
+position: relative;
+
+}
+
+.Textbox {
+    height: 569px;
+   
+    /* border: solid 9px darkblue; */
+    margin-right: 10px;
+}
+
+.Textbox-big {
+    font-size: 64px;
+    font-weight: 200;
+}
+
+.Textbox2 {
+    height: 426px;
+    margin-top: 68px;
+}
+
+.Textbox-s1 {
+    margin-top: 38px;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.Textbox-s2 {
+    text-transform: uppercase;
+    font-size: 24;
+    margin-top: 32px;
+    font-weight: 200;
+}
+
+.round-btn {
+    position: absolute;
+    display: inline-block;
+    padding: 10px;
+    padding-inline: 25px;
+    color: #fff;
+    border-radius: 100px;
+    bottom: 20px;
+    left: 20px;
+}

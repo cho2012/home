@@ -22,7 +22,6 @@
     width: 500px;
     display: flex;
     justify-content: space-between;
-    text-transform: uppercase;
     font-size: 19px;
     font-weight: 75;
 }

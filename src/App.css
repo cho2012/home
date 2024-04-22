@@ -1,0 +1,18 @@
+.arrow {
+    width: 32px;
+    height: 58px;
+    margin: 20px;
+    background-image: url(./images/arrow.svg);
+    
+}
+
+.arrow:last-child {
+    transform: rotate(180deg);
+}
+
+.long-arrow {
+    width: 96px;
+    height: 7px;
+    background-image: url('./images/long-arrow.svg');
+}
+

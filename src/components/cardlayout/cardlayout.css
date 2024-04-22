@@ -1,15 +1,16 @@
 .cardlayout {
     display: flex;
     height: 842px;
-    width: 1161px;
+    max-width: 1161px;
     margin-inline: auto;
     /* border: solid 4px cadetblue; */
 }
 
 .wrap-cardlayout {
     height: 710px;
-    width: 1161px;
+    max-width: 1161px;
     margin-top: 51px;
+    margin-inline: auto;
     /* border: 4px solid chartreuse; */
 }
 
@@ -38,22 +39,28 @@
   
   .cardLayer-grp-card-image {
     width: full;
-    height: 270px;
+    height: 250px;
+    background-size: cover;
   }
 
   .cardLayer-grp-card-title {
-    margin-top: 28px;
+    
     font-size: 24px;
-    margin: 27px 0px 0px 36px ;
+   
   }
 
   .cardLayer-grp-card-content {
     font-weight: 40;
-    margin-top: 12px;
     font-size: 18px;
-    margin: 12px 0px 0px 36px ;
+   
   }
 
   .cardLayer-grp-card-link {
-    margin: 45px 0px 38px 36px ;
+    font-size: 18px;
+    
+
+  }
+
+  .padding {
+    height: 1rem;
   }

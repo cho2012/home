@@ -9,17 +9,9 @@
 
 }
 
-.arrow {
-    width: 32px;
-    height: 58px;
-    margin: 20px;
-    background-image: url(../../images/arrow.svg);
-    
-}
 
-.arrow:last-child {
-    transform: rotate(180deg);
-}
+
+
 
 .contain {
     position: relative;

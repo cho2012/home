@@ -1,0 +1,39 @@
+.banner {
+    background-image: url("../../images/banner.png");
+    /* border: solid 0.1px transparent; */
+    height: 504px;
+}
+
+.banner_wrap {
+    margin-inline: auto;
+    height: 504px;
+    width: 558px;
+}
+
+.banner_title {
+    font-size: 54px;
+    padding-top: 84px;
+    text-align: center;
+}
+
+.banner_contents {
+    font-size: 36px;
+    margin-top: 40px;
+    font-weight: 40;
+    text-align: center;
+}
+
+.banner_contents2 {
+    font-size: 36px;
+    margin-top: 18px;
+    font-weight: 40;
+    text-align: center;
+}
+
+.banner_text {
+    text-decoration: underline;
+    margin-top: 58px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}

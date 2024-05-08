@@ -103,7 +103,7 @@
     margin-left: 7px;
     padding-inline: 2rem;
     padding-block: 4px;
-    padding: 15px 20px;
+    padding: 5px 20px;
     font-size: 25px;
     
 
@@ -115,4 +115,15 @@
 }
 .buttonGrp {
     margin-top: 2rem;
+}
+
+@media ((max-width: 767px)) {
+
+    .Title {
+        font-size: 3rem;
+    }
+
+    .content {
+        font-size: 2rem;
+    }
 }

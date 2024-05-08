@@ -1,13 +1,11 @@
 .cardlayout {
     display: flex;
-    height: 842px;
     max-width: 1161px;
     margin-inline: auto;
     /* border: solid 4px cadetblue; */
 }
 
 .wrap-cardlayout {
-    height: 710px;
     max-width: 1161px;
     margin-top: 51px;
     margin-inline: auto;
@@ -63,4 +61,15 @@
 
   .padding {
     height: 1rem;
+  }
+
+  @media (max-width: 767px) {
+
+    .cardLayer-grp {
+      flex-direction: column;
+    }
+
+    .cardLayer-grp-card {
+      margin-bottom: 3rem;
+    }
   }

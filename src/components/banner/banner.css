@@ -7,7 +7,6 @@
 .banner_wrap {
     margin-inline: auto;
     height: 504px;
-    width: 558px;
 }
 
 .banner_title {
@@ -36,4 +35,23 @@
     text-align: center;
     font-size: 24px;
     color: white;
+}
+
+@media (max-width: 767px) {
+    .banner_title {
+        font-size: 27px;
+
+    }
+
+    .banner_contents {
+        font-size: 18px;
+    }
+
+    .banner_contents2 {
+        font-size: 18px;
+    }
+
+    .banner_wrap {
+        align-items: start;
+    }
 }

@@ -1,8 +1,8 @@
 
 .card {
     /* border: solid 3px aquamarine; */
-    width: 500px;
     height: 300px;
+    width: 500px;
     background-size: cover;
 }
 
@@ -28,6 +28,7 @@
 .card-text {
     font-size: 20px;
     color: white;
+    text-decoration: none;
 
 }
 
@@ -36,5 +37,24 @@
     padding: 6px 8px 6px 8px;
     font-size: 24px;
     background-color: #ddb732;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
 
+}
+
+.card-button:hover {
+    background-color: #8b6f09;
+}
+
+.card-button:active {
+    box-shadow: inset 0 0 10px #ffffff;
+
+
+}
+
+@media (max-width: 767px) {
+    .card {
+        max-width: 400px;
+    }
 }

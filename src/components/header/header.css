@@ -26,12 +26,10 @@
     font-weight: 75;
 }
 
-.nav div{
-    padding: 10;
-}
 
-.nav div:hover {
-    background: #000;
+
+.nav :hover {
+    background: #949494;
     color: #FFFFFF;
     transition: background 0.5s;
 }
@@ -56,3 +54,19 @@
 	transition: .5s ease-in-out;
 }
 
+.headermemu {
+    display: none;
+}
+@media ((max-width: 767px)) {
+
+    .headermemu {
+        display: inline-block;
+    }
+    .nav {
+        display: none;
+    }
+
+    .login{
+        display: none;
+    }
+}

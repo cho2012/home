@@ -27,11 +27,13 @@ function ImgText() {
           imgURL="https://i.imgur.com/xIsyWJ5.png"
           btnName="레퍼런트 사이트"
           btnColor="#7C2B29"
+          url="/refrenc"
         />
         <Card
           imgURL="https://i.imgur.com/uzGz8hO.png"
           btnName="튜토리얼 사이트"
           btnColor="#2B387C"
+          url="/tutorial"
         />
       </div>
     </div>

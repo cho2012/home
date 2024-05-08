@@ -1,40 +1,62 @@
 import "./slides.css";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import Slide from "./slide";
+import { useRef } from "react";
+import { useState } from "react";
 function Slides() {
+  const [oldSlide, setOldSlide] = useState(0);
+  const [activeSlide, setActiveSlide] = useState(0);
+  const [activeSlide2, setActiveSlide2] = useState(0);
+
+  const sliderRef = useRef();
+  const [isPlay, setIsPlay] = useState(false);
+  const settings = {
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    beforeChange: (current, next) => {
+      setOldSlide(current);
+      setActiveSlide(next);
+    },
+    afterChange: (current) => setActiveSlide2(current),
+  };
+  const next = () => {
+    sliderRef.current.slickNext();
+  };
+  const prev = () => {
+    sliderRef.current.slickPrev();
+  };
+  const play = () => {
+    sliderRef.current.slickPlay();
+    setIsPlay(true);
+  };
+
+  const pause = () => {
+    sliderRef.current.slickPause();
+    setIsPlay(false);
+  };
   return (
-    <div>
-      <div className="slides">
-        <div className="arrow"></div>
-        <div className="contain">
-          <div className="wrap">
-            <section>
-              <div className="subTitle">kids coding</div>
-              <div className="Title">web design</div>
-              <div className="content">
-                <p>just do it</p>
-                <p>그냥 디자인하는거야!</p>
-                <p>우린 잘 할수 있으니까!</p>
-              </div>
-            </section>
-            <div>
-              <div className="buttonGrp">
-                <div className="button">자세히 보기</div>
-                <div className="button dark">사이트 보기</div>
-              </div>
-            </div>
-          </div>
-          <div className="pageSelecterGrp">
-            <div className="pageSelecter selected"></div>
-            <div className="pageSelecter"></div>
-            <div className="pageSelecter"></div>
-            <div className="play"></div>
-            <div className="pause"></div>
-          </div>
-        </div>
-        <div className="arrow"></div>
-      </div>
+    <div className="slider-container">
+      <Slider ref={sliderRef} {...settings}>
+        {slides.map((_, index) => (
+          <Slide
+            key={index}
+            next={next}
+            prev={prev}
+            play={play}
+            pause={pause}
+            isPlay={isPlay}
+            activeSlide={activeSlide}
+          />
+        ))}
+      </Slider>
     </div>
   );
 }
 
 export default Slides;
+
+const slides = [{ name: "0번" }, { name: "1번" }, { name: "2번" }];

@@ -1,5 +1,6 @@
 import "./card.css";
-function Card({ bgImg, title, text }) {
+import { Link } from "react-router-dom";
+function Card({ bgImg, title, text, url }) {
   return (
     <div
       className="card"
@@ -8,7 +9,9 @@ function Card({ bgImg, title, text }) {
       <div className="card-content-wrap">
         <div className="card-title">{title}</div>
         <div className="card-text">{text}</div>
-        <div className="card-button">자세히 보기</div>
+        <Link to={url} className="card-button">
+          자세히 보기
+        </Link>
       </div>
     </div>
   );

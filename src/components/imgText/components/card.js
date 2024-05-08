@@ -1,12 +1,18 @@
-function Card({ imgURL, btnName, btnColor }) {
+import { Link } from "react-router-dom";
+
+function Card({ imgURL, btnName, btnColor, url }) {
   return (
     <div
       className="Imgbox card-Img"
       style={{ backgroundImage: `url(${imgURL})` }}
     >
-      <div className="round-btn" style={{ backgroundColor: btnColor }}>
+      <Link
+        to={url}
+        className="round-btn"
+        style={{ backgroundColor: btnColor }}
+      >
         {btnName}
-      </div>
+      </Link>
     </div>
   );
 }

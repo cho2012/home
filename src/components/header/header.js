@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import "./header.css";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function Header() {
   return (
@@ -8,13 +10,33 @@ function Header() {
         <span>site</span>
       </div>
       <nav className="nav">
-        <div>header</div>
-        <div>slides</div>
-        <div>banner</div>
-        <div>contents</div>
-        <div>footer</div>
+        <Link to={"/header"} style={{ textDecoration: "none", color: "black" }}>
+          header
+        </Link>
+        <Link to={"/slider"} style={{ textDecoration: "none", color: "black" }}>
+          slides
+        </Link>
+        <Link to={"/banner"} style={{ textDecoration: "none", color: "black" }}>
+          banner
+        </Link>
+        <Link
+          to={"/content"}
+          style={{ textDecoration: "none", color: "black" }}
+        >
+          contents
+        </Link>
+        <Link to={"/footer"} style={{ textDecoration: "none", color: "black" }}>
+          footer
+        </Link>
       </nav>
-      <div className="login">로그인</div>
+      <Link
+        to={"/login"}
+        style={{ textDecoration: "none", color: "black" }}
+        className="login"
+      >
+        로그인
+      </Link>
+      <RxHamburgerMenu className="headermemu" size={22} />
     </div>
   );
 }
